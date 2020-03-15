@@ -743,7 +743,7 @@ textarea{
 
 .img-card{
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
 
 .img-card img {
