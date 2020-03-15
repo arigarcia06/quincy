@@ -1,0 +1,805 @@
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('../fonts/AvenirLTStd-Black.woff2') format('woff2'),
+    url('../fonts/AvenirLTStd-Black.woff') format('woff');
+}
+
+h1, h2, h3, h4, a , p {
+    font-family: 'Avenir LT Std';
+    font-weight: 900;
+    font-style: normal;
+     color: #666666;
+}
+
+a{
+  font-family: 'Avenir LT Std';
+  font-weight: 300!important;
+   font-style: normal;
+  text-decoration: none;
+}
+
+
+
+body{
+  margin: 0;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color:  #9E9E9E;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background:#5a75a7 !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.logo{
+  background-color: #5a75a7;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+:focus{
+  outline: none;
+}
+
+.logo a img {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  align-content: center;
+}
+
+.header__main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  transition: .5s;
+  justify-content: center;}
+
+.fixed-me {
+  background:#011638 ;
+  transition: .5s; }
+
+.nav-item {
+    justify-content: center;
+    position: relative;
+    padding: 25px;
+    color: #838080;
+    font-size: 15px;
+    align-items: center;
+    width: 35%;
+    text-align: center;
+    align-items: center;
+     transition: .5s;
+ }
+
+.nav-item:hover{
+    background-color: #5a75a7!important;
+    transition: .5s;
+}
+
+.nav-item:hover a{
+    color: #fff!important;
+    transition: .5s;
+}
+
+
+.responsive-menu-btn {
+  width: 48px;
+  overflow: hidden;
+  height: 48px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  position: relative;
+    z-index: 99; }
+  .responsive-menu-btn svg {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .responsive-menu-btn svg.open {
+      visibility: visible;
+      animation: XrotateScaleFadeInReverse 0.37s ease forwards; }
+    .responsive-menu-btn svg.close {
+      visibility: hidden;
+      animation: XrotateScaleFadeOut 0.37s ease forwards; }
+  .responsive-menu-btn > svg.open {
+    width: 80%;
+    height: auto;
+    fill: #838080; }
+  .responsive-menu-btn > svg.close {
+    position: relative;
+    top: 3px;
+    width: 92%;
+    height: auto;
+    fill: #838080; }
+  .responsive-menu-btn.--is-open svg.close {
+    visibility: visible;
+    animation: XrotateScaleFadeIn 0.37s ease forwards; }
+  .responsive-menu-btn.--is-open svg.open {
+    visibility: hidden;
+    animation: XrotateScaleFadeOut 0.37s ease forwards; }
+
+@media (min-width: 700px) {
+  .responsive-menu-btn {
+    display: none; } }
+.nav__menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+    background: #011638;
+    left: 0;
+  width: 100%;
+    height: 40%;
+  transform: translate(-100%, 0);
+  transition: transform 0.2s linear;
+ }
+  .nav__menu.--is-open {
+    transform: translate(0, 0);
+      height: 100vh;
+    padding: 30px; }
+  .nav__menu > a {
+    text-transform: uppercase;
+    padding: 2rem;
+    text-decoration: none;
+    color: #838080;
+    font-size: 15px;
+ }
+
+@media (min-width: 700px) {
+  .nav__menu {
+    display: flex;
+    flex-direction: row;
+    background: none;
+    border-right: none;
+    position: static;
+    margin-left: auto;
+     justify-content: space-around;
+    height: auto;
+    transform: translate(0, 0); }
+    .nav__menu.--is-open {
+      display: flex; } }
+.page-wrapper {
+  min-height: 100vh; }
+  .page-wrapper:nth-child(1) {
+    background: #838080; }
+  .page-wrapper:nth-child(2) {
+    background: #f2f2f2; }
+
+@keyframes XrotateScaleFadeIn {
+  0% {
+    opacity: 0;
+    transform: rotate(360deg) scale(0); }
+  55% {
+    opacity: 0.35;
+    transform: rotate(360deg) scale(0.5); }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1); } }
+@keyframes XrotateScaleFadeInReverse {
+  0% {
+    opacity: 0;
+    transform: rotate(-360deg) scale(0); }
+  55% {
+    opacity: 0.35;
+    transform: rotate(-360deg) scale(0.5); }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1); } }
+@keyframes XrotateScaleFadeOut {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1); }
+  55% {
+    opacity: 0.35;
+    transform: rotate(360deg) scale(0.5); }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg) scale(0); } }
+
+  .single-item  .slick-dots li.slick-active button:before {
+    color: #5a75a7;
+}
+.cont-todo{
+    width: 65%;
+    box-shadow: 3px 2px 4px 1px rgba(242, 242, 242, 0.37);
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+}
+
+.active{
+  background-color:  #5a75a7;
+}
+
+.active a {
+  color: #fff!important;
+}
+
+.principal-text{
+    height: 85vh;
+    padding-top: 100px;
+}
+
+.text-banner{
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 25%;
+  z-index: 99;
+  right: 0;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+}
+
+.btn-reservar{
+    background: #5a75a7;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.dog-img{
+  padding-top: 100px;
+  position: relative;
+}
+
+.dog-img img{
+  width: 100%;
+}
+
+.text-banner h1{
+  color: #666666;
+  font-size: 35px;
+  margin-bottom: -10px;
+}
+
+.text-banner h3 {
+    font-size: 23px;
+    margin-bottom: -5px;
+}
+
+.text-banner p{    
+  font-size: 19px;
+  font-weight: 100;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.icons-sec{
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 25px 0px 100px 0px;
+    position: relative;
+}
+
+.icon-img{
+  display: flex;
+  justify-content: center;
+}
+
+.icon-img img {
+    width: 70px;
+    height: 70px;
+}
+
+.icon-text{
+  text-align: center;
+}
+
+.icon-text p {
+    margin-bottom: -8%;
+    font-size: 13px;
+}
+
+.service{
+  position: relative;
+}
+.box-text {
+     background: #5a75a7;
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 38%;
+    right: 0;
+    height: 130px;
+    width: 23%;
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+    border-radius: 30px;
+}
+
+.box-text h2{
+  color: #fff;
+}
+
+.btn-consult{
+  font-family: 'Avenir LT Std';
+   background-color: #fff;
+  color: #5a75a7;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 30px;
+  width: 65%;
+  border: none;
+}
+
+.ws {
+    position: absolute;
+    top: 30%;
+    left: 64%;
+}
+
+.ws img{
+  width: 90px;
+}
+
+.service h2{
+  margin-top: 11%;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+
+.service h2::after{
+     position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: #5a75a7;
+    top: 100%;
+    bottom: 0;
+    left: 48%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-serv{
+       width: 90%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.text-card{
+    position: absolute;
+    width: 30%;
+    top: -23%;
+    left: 56%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-card p{
+  color: #fff;
+  font-size: 13px;
+}
+
+.service-four{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+    padding-top: 10px;
+}
+
+.item-serv img {
+    width: 85%;
+}
+
+.btn-see{
+  background: transparent;
+  border: none;
+  color: #ffff;
+  font-family: 'Avenir LT Std';
+}
+
+.btn-serv{
+  position: absolute;
+  width: 30%;
+  top: 0%;
+  left: 56%;
+  right: 0;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  z-index: 99;
+  color: black;
+}
+
+.back-text{
+    background-image: url(../img/fotos-web/back.png);
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back-text h2{
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: -1%;
+}
+
+.back-text p{
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.oferta{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.oferta img{
+  box-shadow: 3px 3px 4px 1px #9e9e9e;
+  border-radius: 10px;
+}
+
+.about{
+  background-image: url('../img/fotos-web/nosotros.png');
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+  background-size: cover;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    z-index: 99;
+    width: 40%;
+    text-align: center;
+}
+
+.about-text h2{
+  font-size: 35px;
+  color: #5a75a7;
+  margin-bottom: -1%;
+}
+
+.about-text p{
+  color: #5a75a7;
+  font-style: italic;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form h2{
+      color: #5a75a7;
+    font-size: 30px;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+}
+
+input{
+    background: transparent;
+    margin-bottom: 1%;
+    padding: 10px 30px!important;
+    border: 1px solid #9e9e9e;
+    color: #5a75a7;
+    font-size: 18px!important;
+    font-family: 'Avenir LT Std';
+    border-radius: 5px;
+    width: 507px;
+}
+
+::placeholder{
+   color: #5a75a7;
+}
+
+.button{
+  font-size: 20px;
+  padding: 7px 60px 7px 60px;
+  background-color: #a9bd84;
+  color: #fff;
+   border-radius: 5px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+textarea{
+  background: transparent;
+   padding: 10px 30px!important;
+  resize: none;
+  border: 1px solid #9e9e9e;
+  font-size: 18px!important;
+  font-family: 'Avenir LT Std';
+  border-radius: 5px;
+}
+
+.footer{
+  background-color: #5a75a7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+  font-family: 'Avenir LT Std';
+  text-align: center;
+}
+
+.button-Clinica{
+    background-color: #5a75a7;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    box-shadow: 3px 3px 4px 1px #011638b0;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Avenir LT Std';
+    cursor: pointer;
+}
+
+.info-1{
+  margin-bottom: 1%;
+}
+
+/*-----------------------FIN HOME VETERINARIOS--------------------*/
+
+/*-----------------------PAGE CONTACTANOS--------------------------------*/
+.principal-contact{
+  padding-top: 300px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.icon{
+  width: 15%;
+}
+
+.align-icon{
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+
+.align-icon p{
+  margin-left: 5%;
+
+}
+
+.icon-contact{
+      display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.content-contact{
+  display: flex;
+}
+
+.form-2 h2{
+      text-align: center;
+    color: #5a75a7;
+}
+
+/*-----------------------FIN DE PAGE CONTACTANOS-------------------------*/
+
+
+/*------------------------HOME EQUINOS---------------------------------------*/
+.item-banner img{
+      width: 100%;
+    height: 85vh;
+    object-fit: cover;
+}
+.know{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background: #5a75a7;
+    padding: 30px 30px 50px 30px;
+}
+.know h2{
+  color: #fff;
+  font-size: 30px;
+}
+
+.know  p{
+  color: #fff;
+  font-size: 25px;
+}
+
+.item{
+      width: 85%;
+    height: 220px;
+}
+.item img{
+    width: 85%;
+    height: 220px;
+    margin-left: 7%;
+    margin-top: 10%;
+}
+
+.multiple-items .slick-dots{
+      bottom: -50px;
+}
+
+.noticias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.noticias h2{
+  margin-bottom: -1%;
+  font-size: 30px;
+}
+
+.noticias h3{
+  font-size: 25px;
+  position: relative;
+}
+
+.noticias h3::after{
+    position: absolute;
+    top: 40px;
+    bottom: 4%;
+    left: 46%;
+    right: 0;
+    content: '';
+    height: 1px;
+    width: 81px;
+    background-color: #5a75a7;
+}
+
+.card{
+    box-shadow: inset -4px -6px 2px 1px #e5e5e5;
+    border-radius: 10px;
+        width: 75%;
+    height: 385px;
+    padding: 25px;
+  }
+
+  .item-card{
+    display: flex!important;
+    justify-content: center!important;
+        margin-top: 1%;
+  }
+
+.text-noticias{
+  margin-bottom: 5%;
+    font-family: 'Avenir LT Std';
+    color: #666666;
+}
+
+.multiple-card{
+  padding-bottom: 100px!important;
+}
+
+.img-card{
+  display: flex;
+    justify-content: center;
+}
+
+.img-card img {
+    width: 80%;
+}
+
+.multiple-card .slick-dots li.slick-active button:before {
+    color: #5a75a7;
+}
+
+.item-card{
+  width: 10%;
+}
+
+.convenio{
+    position: absolute;
+    left: 24%;
+    z-index: 99;
+    bottom: -10%;
+}
+
+.conv-img{
+  position: relative;
+}
+
+.conv-img img{
+  height: 25vh;
+}
+
+
+.conv-text{
+     position: absolute;
+    z-index: 99;
+    left: 20%;
+    top: 5%;
+}
+
+.conv-text h2{
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: -6%;
+}
+
+.conv-text h4{
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 5%;
+}
+
+.about-two{
+    background-image: url('../img/fotos-web/otra.png');
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+  background-size: cover;
+}
+
+
+/*------------------------FIN DE HOME EQUINOS--------------------------------*/
