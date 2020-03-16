@@ -1,3 +1,14 @@
+
+$('.single-banner').slick({
+  dots: true,
+  autoplay: true,
+  dots: true,
+  autoplaySpeed: 2000,
+  fade: true,
+  prevArrow: '<div class="slick-prev-arrow"><img src="assets/img/iconos-web/left.svg" alt=""></div>',//$('.slick-prev-arrow'),
+  nextArrow: '<div class="slick-next-arrow"><img src="assets/img/iconos-web/right.svg" alt=""></div>',//$('.slick-next-arrow'),
+});
+
 $(document).ready(function () {
     $(".single-item").slick({
         autoplay: false,
@@ -68,6 +79,8 @@ $('.multiple-card').slick({
         }
     ]
 });
+
+
 
 
 

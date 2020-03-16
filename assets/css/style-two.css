@@ -1,0 +1,258 @@
+
+
+a{
+  text-decoration:none;
+  color: #666666;
+}
+/* BANNER HOME */
+.banner-home {
+  position: relative;
+}
+.item-banner {
+  height: 74.7vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mask-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #0000002b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-banner {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #ffff!important;
+  margin:1rem 0;
+  text-align: center;
+  text-shadow: 2px 2px 7px #000000cf;
+  }
+.btn-banner {
+  border: 2PX solid #f35314;
+  color: #fff;
+  background-color: #f35314;
+}
+
+.banner-p {
+  text-transform: uppercase;
+  font-size: 35px;
+    color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: 2px 2px 7px #000000cf;
+  }
+
+.slick-prev-arrow, .slick-next-arrow {
+  align-items: center;
+  cursor: pointer;
+  top: 0;
+  display: flex;
+  color: #fff;
+  font-size: 6rem;
+  justify-content: center;
+  position: absolute;
+  transition: .5s;
+  width: 3.5rem;
+  z-index: 999;
+  height: 100%;
+}
+.slick-arrow img{
+    width: 5rem;
+}
+.slick-prev-arrow{
+  left: 1.5rem;
+}
+
+.slick-next-arrow {
+  right: 1.5rem;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #5a75a7;
+}
+.slick-dots li button:before {
+    font-size: 1rem;
+    color: #5a75a7;
+    opacity: .4;
+}
+.directionals{
+  justify-content: center;
+  display: flex;
+}
+.text-banner-two{
+  color: #fff;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 30%;
+}
+
+  .header{width: 100%;
+height: 10vh;;
+background:#5a75a7;}
+
+.btn-principal{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.btn-direction{
+   background: white;
+   padding: .5rem;
+   color: #666666;
+   font-size: 15px;
+   font-weight: bold;
+}
+.btn-direction:hover{
+  color: #5a75a7;
+}
+.content-btn img {
+    height: 5rem;
+}
+.services-veterinary{
+  max-width: max-content;
+  padding-top: 200px;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  color: #666666;
+}
+.all-services{
+  margin: 2rem 3.2rem;
+}
+.item-service{
+  justify-content: center;
+  display: flex;
+}
+.img-service img{
+    width: 45rem;
+    object-fit: cover;
+}
+.img-service{
+  display: flex;
+  align-items: center;
+}
+.text-service{
+   align-items: center;
+   display: flex;
+   left: -5rem;
+   color: #666666;
+}
+.title-service, .title-about{
+ 
+    font-weight: bold;
+    font-size: 35PX;
+    width: max-content;
+}
+.text-service p, .mini-text{
+   
+      font-style: italic;
+      font-size: 25px;
+  }
+.icon-service{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.icon-service span{
+  text-transform: uppercase;
+  font-family: 'AvenirLTStd-Black';
+}
+.icon-service img{
+    margin-bottom: 1rem;
+    width: 7rem;
+}
+.icon-service .row{
+  justify-content: center;
+}
+
+
+
+.about-deport, .centro-monta-gratuito {
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    padding-right: 25px;
+  }
+.title-about{
+  margin-bottom: 3rem;
+}
+.info-about-p{
+  font-size: 1.2rem;
+    font-style: italic;
+}
+.about-services{
+  display: flex;
+  justify-content: center;
+}
+.about-services .info-service{
+  width: max-content;
+}
+.about-services .icon-service{
+  align-items: end;
+
+}
+.about-services .icon-service .icon{
+  margin-bottom: 6rem;
+}
+
+.about-slide .slick-initialized .slick-slide {
+    justify-content: center;
+    display: flex;
+}
+.about-slide .slick-slide img {
+    display: block;
+    width: 23rem;
+    margin: 2rem;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 9px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 9px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 9px 15px 0px rgba(0,0,0,0.75);
+}
+
+.content-btn{
+      display: flex;
+    justify-content: center;
+}
+
+
+.centro-monta-gratuito img{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.info-centro-p{
+  font-size: 1.2rem;
+    font-style: italic;
+text-align: justify;
+padding: 0 2rem 0 0;
+
+}
+
+.slider .slick-next{
+  display: none!important;
+}
