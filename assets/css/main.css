@@ -5,17 +5,40 @@
     url('../fonts/AvenirLTStd-Black.woff') format('woff');
 }
 
-h1, h2, h3, h4, a , p {
-    font-family: 'Avenir LT Std';
+*{
+    font-family: 'AvenirLTStd-Book';
+       color: #666666;
+}
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AvenirLTStd-Book.woff") format('woff');
+}
+
+
+h1, h2{
+        font-family: 'Avenir LT Std';
     font-weight: 900;
     font-style: normal;
      color: #666666;
 }
 
+ h3, h4,  p {
+    font-family: 'AvenirLTStd-Book';
+    font-weight: 100;
+    font-style: normal;
+     color: #666666;
+}
+
+.button{
+   font-family: 'Avenir LT Std';
+}
+
 a{
   font-family: 'Avenir LT Std';
   font-weight: 300!important;
-   font-style: normal;
+  font-style: normal;
   text-decoration: none;
 }
 
@@ -598,6 +621,7 @@ textarea{
 
 .info-1{
   margin-bottom: 1%;
+  color: #fff;
 }
 
 /*-----------------------FIN HOME VETERINARIOS--------------------*/
@@ -733,7 +757,6 @@ textarea{
 
 .text-noticias{
   margin-bottom: 5%;
-  font-family: 'Avenir LT Std';
   color: #666666;
 }
 
@@ -799,6 +822,10 @@ textarea{
   height: 70vh;
   position: relative;
   background-size: cover;
+}
+
+.title-card p{
+ font-family: 'Avenir LT Std';
 }
 
 
